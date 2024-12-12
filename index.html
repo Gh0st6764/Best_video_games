@@ -6,39 +6,46 @@
 	<meta name="viewport" content="width=device-width">
 	<title>replit</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+        body {
+          font-family: "babas neue", sans-serif;
+        }
+        </style>
+        </head>
 </head>
 
 <body>
 	<header>
-		<h1>How is your air quality?</h1>
-		<p>Enter your information below to check!</p>
+		<h1>What video game should you buy?</h1>
+		<p></p>
 	</header>
 
 	<center>
-		<label>State: </label>
+		<label>What's the platform?</label>
     <select id="day">
-      <option value="Monday">monday</option>
-      <option value="Tuesday">tuesday</option>
-      <option value="Wednesday">wednesday</option>
-      <option value="Thursday">thursday</option>
-      <option value="Friday">friday</option>
-      <option value="Saturday">saturday</option>
-      <option value="Sunday">sunday</option>
+      <option value="Nintendo Switch">Nintendo Switch</option>
+      <option value="Mobile">Mobile</option>
+      <option value="Wii">Wii</option>
+      <option value="GameBoy Color">Gameboy Color</option>
+      <option value="Wii U">Wii U</option>
+      <option value="Colorado">Colorado</option>
     </select>
     <br>
     <br>
 
-    <label>County </label>
-    <input type="text" id="age"><br><br>
+    <label>How recent?</label>
+    <input type="Recent" id="Recent"><br><br>
       
-    <label>Year: </label>
+    <label>Favorite developer</label>
     <input type="text" id="discount"><br><br>
 
-    <button onclick="getTicket()">Create My Ticket!</button>
+    <button onclick="getTicket()">Find your video game!</button>
 
     <div class="outputBox">
-      <h2>Admit One</h2>
-  	  <img width="20%"src="qr.png">
+      <h2></h2>
 		  <p id="output"> </p>
 	  </div>
 
