@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"   3   `content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Best Video Games</H1>
-    <p>HOly M0ly </p>
+<html>
 
-    <script src="utils.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<h1>How is your air quality?</h1>
+		<p>Enter your information below to check!</p>
+	</header>
+
+	<center>
+		<label>State: </label>
+    <select id="day">
+      <option value="Monday">monday</option>
+      <option value="Tuesday">tuesday</option>
+      <option value="Wednesday">wednesday</option>
+      <option value="Thursday">thursday</option>
+      <option value="Friday">friday</option>
+      <option value="Saturday">saturday</option>
+      <option value="Sunday">sunday</option>
+    </select>
+    <br>
+    <br>
+
+    <label>County </label>
+    <input type="text" id="age"><br><br>
+      
+    <label>Year: </label>
+    <input type="text" id="discount"><br><br>
+
+    <button onclick="getTicket()">Create My Ticket!</button>
+
+    <div class="outputBox">
+      <h2>Admit One</h2>
+  	  <img width="20%"src="qr.png">
+		  <p id="output"> </p>
+	  </div>
+
+  </center>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
