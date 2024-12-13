@@ -6,6 +6,7 @@ var platforms = getColumn(url, 3);
 var releaseDate = getColumn(url, 4);
 var developer = getColumn(url, 5);
 
+
 var displayGames = [];
 
 //this is the most important variable, this is the final product. 
@@ -17,36 +18,23 @@ var matchingGames = [];
     document.getElementById('output').innerHTMl = "";
 } */
 
-var uniquePlatforms
+var uniquePlatforms = [];
  for (var i = 0; i < platforms.length; i++){
  if(!uniquePlatforms.includes(platforms[i])){
     uniquePlatforms.push(platforms[i])
  }
 }
-var uniquePlatformsCounts = [];
-for(var i = 0; i < uniquePlatforms.length; i++){
-    var count = 0;
-for(var j = 0; j < platforms.length; j++){
-    if(uniquePlatforms[i] == parties[j]){
-        count++
-        }
-    }
-    uniquePlatformsCounts.push(count);
-}
+console.log(uniquePlatforms);
 
-var max = 0; 
-var platformWithMost = "";
-for(var i = 0; i < uniquePlatformsCounts.length; i++){
-    if(uniquePlatformsCounts[i] > max);
-    platformWithMost = uniquePlatforms[i]
-}
-console.log(uniquePlatforms)
-   
-    console.log(platforms);
-    console.log(uniquePlatforms);
+
+
+var platformSelect
+
 
     // var platformSelect = document.getElementById("platforms")
     //     for (var i = 0; i < uniquePlatforms.length; i++)
     //         var el = document.createElement("option")
 
-    //         el.innerHTML =
+    //         el.innerHTML = 
+
+            
