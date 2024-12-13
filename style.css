@@ -1,8 +1,9 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:lightskyblue
   }
   header{
-    background-color: lightskyblue;
+    background-color: white;
     padding: 20px;
     margin-bottom: 10px;
   }
@@ -20,9 +21,9 @@ body{
   }
 
   button{
-    background-color: lightskyblue;
+    background-color: rgba(111, 189, 111, 0.848);
     padding: 10px;
-    font-family: monospace;
+    /* font-family: ; */
     border: none;
     margin-bottom: 10px;
   }
@@ -34,5 +35,6 @@ body{
     outline-style: solid;
   }
   .slider{
-    accent-color: lightskyblue; 
+    accent-color: rgb(249, 251, 142); 
+  
   } 
