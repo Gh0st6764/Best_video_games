@@ -28,7 +28,16 @@ console.log(uniquePlatforms);
 
 
 
-var platformSelect
+var platformSelect = document.getElementById("Platforms");
+for (var i = 0; i < uniquePlatform.length; i++){
+    var el = document.createElement("option");
+    el.innerHTMl = uniquePlatforms[i];
+    el.value = uniquePlatforms [i];
+
+    platformSelect.appendChild(el);
+
+
+}
 
 
     // var platformSelect = document.getElementById("platforms")
@@ -36,5 +45,3 @@ var platformSelect
     //         var el = document.createElement("option")
 
     //         el.innerHTML = 
-
-            
