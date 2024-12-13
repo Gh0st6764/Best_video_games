@@ -16,7 +16,9 @@ body{
   input{
     font-family: monospace;
     font-size: 20px;
+   
   }
+
   button{
     background-color: lightskyblue;
     padding: 10px;
@@ -31,4 +33,7 @@ body{
     outline-color: lightskyblue;
     outline-style: solid;
   }
+  .slider{
+    accent-color: lightskyblue; 
   
+  } 
