@@ -25,6 +25,7 @@
 
 	<center>
 		<label>What's the platform?</label>
+    <br>
     <select id="platformSelect">
 
     </select>
@@ -32,14 +33,17 @@
     <!-- <br> is adding a line break -->
     <br>
 
-    <label>Favorite developer</label>
-    <input type="text" id="discount"><br><br>
+    <label>Favorite Publisher</label>
+    <br>
+    <select id="publisherSelect"></select>
+    <br>
 
     <label>How recent?</label>
-  <input oninput="releaseDate()"  type="range" min="10" max="60" value="25" class="slider" id="size">
+    <br>
+  <input  type="range" min="1990" max="2017" value="2000" class="slider" id="year">
  <br> <br>
 
-    <button onclick="getTicket()">Find your video game!</button>
+    <button >Find your video game!</button>
 
     <div class="outputBox">
       <h2></h2>
