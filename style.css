@@ -23,15 +23,15 @@ body{
   button{
     background-color: rgba(111, 189, 111, 0.848);
     padding: 10px;
-    /* font-family: ; */
+     font-family: ariel;
     border: none;
     margin-bottom: 10px;
   }
   .outputBox{
-    padding: 10px;
+    padding: 40px;
     min-height: 160px;
-    width: 60%;
-    outline-color: lightskyblue;
+    width: 65%;
+    outline-color: white;
     outline-style: solid;
   }
   .slider{
