@@ -29,16 +29,18 @@ console.log(uniquePlatforms);
 
 //Creates the platform select drop-down, it is also linked to the list
 //making it alot easier than manually adding everything
-var platformSelect = document.getElementById("Platforms");
-for (var i = 0; i < uniquePlatform.length; i++){
+var platformSelect = document.getElementById("platformSelect");
+for (var i = 0; i < uniquePlatforms.length; i++){
     var el = document.createElement("option");
-    el.innerHTMl = uniquePlatforms[i];
+    el.innerHTML = uniquePlatforms[i];
     el.value = uniquePlatforms [i];
 
     platformSelect.appendChild(el);
 
 
 }
+
+
     // var platformSelect = document.getElementById("platforms")
     //     for (var i = 0; i < uniquePlatforms.length; i++)
     //         var el = document.createElement("option")
