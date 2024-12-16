@@ -4,7 +4,7 @@ var url = "https://raw.githubusercontent.com/b-mcavoy/datasets/refs/heads/main/C
 var videoGames = getColumn(url, 1);
 var platforms = getColumn(url, 3);
 var releaseDate = getColumn(url, 4);
-var developer = getColumn(url, 5);
+var publisher = getColumn(url, 6);
 
 
 var displayGames = [];
@@ -24,7 +24,7 @@ var uniquePlatforms = [];
     uniquePlatforms.push(platforms[i])
  }
 }
-console.log(uniquePlatforms);
+
 
 
 //Creates the platform select drop-down, it is also linked to the list
@@ -41,8 +41,26 @@ for (var i = 0; i < uniquePlatforms.length; i++){
 }
 
 
-    // var platformSelect = document.getElementById("platforms")
-    //     for (var i = 0; i < uniquePlatforms.length; i++)
-    //         var el = document.createElement("option")
+   
 
-    //         el.innerHTML = 
+var uniquePublisher = [];
+ for (var i = 0; i < publisher.length; i++){
+ if(!uniquePublisher.includes(publisher[i])){
+    uniquePublisher.push(publisher[i])
+ }
+}
+console.log(uniquePublisher);
+
+
+//Creates the platform select drop-down, it is also linked to the list
+//making it alot easier than manually adding everything
+var publisherSelect = document.getElementById("publisherSelect");
+for (var i = 0; i < uniquePublisher.length; i++){
+    var el = document.createElement("option");
+    el.innerHTML = uniquePublisher[i];
+    el.value = uniquePublisher[i];
+
+    publisherSelect.appendChild(el);
+
+
+}
