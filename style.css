@@ -1,40 +1,40 @@
 body{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color:lightskyblue
+  font-family: monospace;
+  background-color: rgb(220, 115, 238);
 }
-header{
-  background-color: white;
-  padding: 20px;
+
+.outputBox{
+  min-height: 80px;
+  width: 60%;
   margin-bottom: 10px;
-}
-label{
-  font-size: 20px;
-}
-select{
-  font-family: monospace;
-  font-size: 20px;
-}
-select{
-  font-family: monospace;
-  font-size: 20px;
- 
+  background-color: white;
+  padding: 5px;
 }
 
 button{
-  background-color: rgba(111, 189, 111, 0.848);
+  background-color: white;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   border: none;
-  margin-bottom: 10px;
+  
 }
-.outputBox{
-  padding: 10px;
-  min-height: 160px;
-  width: 60%;
-  outline-color: lightskyblue;
-  outline-style: solid;
-}
-.slider{
-  accent-color: rgb(249, 251, 142); 
 
-} 
+header{
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+select{
+  padding: 10px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+input{
+  padding: 10px;
+  font-family: monospace;
+}
+
+
