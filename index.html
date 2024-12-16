@@ -33,15 +33,15 @@
     <!-- <br> is adding a line break -->
     <br>
 
-    <label>Favorite Publisher</label>
+    <label>Favorite Publisher?</label>
     <br>
     <select id="publisherSelect"></select>
     <br>
 
     <label>How recent?</label>
     <br>
-  <input  type="range" min="1990" max="2017" value="2000" class="slider" id="year">
- <br> <br>
+  <input  oninput="showYear()" type="range" min="1990" max="2017" value="2000" class="slider" id="year">
+ <p id = "sliderValue">2000</p>
 
     <button >Find your video game!</button>
 
