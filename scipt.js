@@ -8,15 +8,23 @@ var publisher = getColumn(url, 6);
 
 
 var displayGames = [];
-
 //this is the most important variable, this is the final product. 
 //after every input is completed it is added up into matching games
 //to be displayed
 var matchingGames = [];
 
-/*function createList(platform, recent, developer){
+function createList(platform, recent, developer){
     document.getElementById('output').innerHTMl = "";
-} */
+for(var i = 0; i < videoGames.length; i++)
+    if(uniquePlatforms[i] == platformSelect && uniquePublisher[i] == publisherSelect && releaseDate){
+        matchingGames.push(videoGames[i])
+    }
+}
+
+function showYear(){
+    document.getElementById("sliderValue").innerHTML = document.getElementById("year").value;
+}
+
 
 var uniquePlatforms = [];
  for (var i = 0; i < platforms.length; i++){
@@ -64,3 +72,6 @@ for (var i = 0; i < uniquePublisher.length; i++){
 
 
 }
+
+
+    
