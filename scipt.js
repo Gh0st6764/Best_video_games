@@ -13,18 +13,13 @@ var displayGames = [];
 //to be displayed
 var matchingGames = [];
 
-function createList(platform, recent, developer){
-    document.getElementById('output').innerHTMl = "";
-for(var i = 0; i < videoGames.length; i++)
-    if(uniquePlatforms[i] == platformSelect && uniquePublisher[i] == publisherSelect && releaseDate){
-        matchingGames.push(videoGames[i])
-    }
-}
 
+//this is the code for the slider, it makes it so that you 
+//can change your year with the simple slider, the further you go 
+//then the sooner in recent times it will get.
 function showYear(){
     document.getElementById("sliderValue").innerHTML = document.getElementById("year").value;
 }
-
 
 var uniquePlatforms = [];
  for (var i = 0; i < platforms.length; i++){
@@ -50,7 +45,7 @@ for (var i = 0; i < uniquePlatforms.length; i++){
 
 
    
-
+//This is the code for publishers, if you input that you need 
 var uniquePublisher = [];
  for (var i = 0; i < publisher.length; i++){
  if(!uniquePublisher.includes(publisher[i])){
@@ -73,6 +68,8 @@ for (var i = 0; i < uniquePublisher.length; i++){
 
 //------------------------------------------------------------------------------
 
+//Creates the final list from all inputs
+
 if(platformSelect == "Multi-platform"){
 }
     //if platform select = Mobile then 
@@ -81,10 +78,14 @@ if(platformSelect == "Multi-platform"){
 function findVideogames (chosenYear, chosenPlatform, chosenPublisher){
     var outputList = [];
     for(var i = 0; i < videoGames.length; i++){
-        if(platforms[i] == chosenPlatform && publisher[i] == chosenPublisher && releaseDate[i] == chosenYear){
+        //This looks at all the platforms, prefered publishers, 
+        //and how recent it is and creates the list that is shown 
+        //to the user. It is the end product. 
+        if(platforms[i] == chosenPlatform && publisher[i] == chosenPublisher && releaseDate[i] <= chosenYear){
             outputList.push(videoGames[i]);
         } 
-    console.log(outputList);
+        
     }   
-    return outputList; // Return the result continued use
+    console.log(outputList);
+    return outputList; 
 }
