@@ -17,9 +17,10 @@ var matchingGames = [];
 //this is the code for the slider, it makes it so that you 
 //can change your year with the simple slider, the further you go 
 //then the sooner in recent times it will get.
+
 function showYear(){
     document.getElementById("sliderValue").innerHTML = document.getElementById("year").value;
-}
+ }
 
 var uniquePlatforms = [];
  for (var i = 0; i < platforms.length; i++){
@@ -45,7 +46,6 @@ while ( index < uniquePlatforms.length){
     index++;
 }
 
-
    
 //This is the code for publishers, if you input that you need 
 var uniquePublisher = [];
@@ -54,7 +54,7 @@ var uniquePublisher = [];
     uniquePublisher.push(publisher[i])
  }
 }
-console.log(uniquePublisher);
+// console.log(uniquePublisher);
 
 
 //Creates the platform select drop-down, it is also linked to the list
@@ -72,22 +72,32 @@ for (var i = 0; i < uniquePublisher.length; i++){
 
 //Creates the final list from all inputs
 
-if(platformSelect == "Multi-platform"){
-}
+
     //if platform select = Mobile then 
    //then print all applying videogames 
 
 function findVideogames (chosenYear, chosenPlatform, chosenPublisher){
     var outputList = [];
+    console.log(chosenYear);
+    console.log(chosenPlatform);
+    console.log(chosenPublisher);
     for(var i = 0; i < videoGames.length; i++){
+       
         //This looks at all the platforms, prefered publishers, 
         //and how recent it is and creates the list that is shown 
         //to the user. It is the end product. 
-        if(platforms[i] == chosenPlatform && publisher[i] == chosenPublisher && releaseDate[i] <= chosenYear){
+        if(platforms[i] == chosenPlatform && publisher[i] == chosenPublisher && releaseDate[i].includes(chosenYear)){
             outputList.push(videoGames[i]);
         } 
         
-    }   
+    }  
+    //This is if there is no  
     console.log(outputList);
-    return outputList; 
+    if(outputList.length == 0){
+        document.getElementById("output").innerHTML = "Sorry, there are no matches"
+    }
+
+    else{
+    document.getElementById("output").innerHTML = outputList;
+    }
 }
