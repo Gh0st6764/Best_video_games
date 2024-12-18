@@ -33,14 +33,16 @@ var uniquePlatforms = [];
 //Creates the platform select drop-down, it is also linked to the list
 //making it alot easier than manually adding everything
 var platformSelect = document.getElementById("platformSelect");
-for (var i = 0; i < uniquePlatforms.length; i++){
+
+var index = 0;
+while ( index < uniquePlatforms.length){
     var el = document.createElement("option");
-    el.innerHTML = uniquePlatforms[i];
-    el.value = uniquePlatforms [i];
+    el.innerHTML = uniquePlatforms[index];
+    el.value = uniquePlatforms [index];
 
     platformSelect.appendChild(el);
 
-
+    index++;
 }
 
 
