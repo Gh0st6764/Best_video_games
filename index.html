@@ -43,7 +43,7 @@
     <label>How recent?</label><br>
   <input  oninput="showYear()" type="range" min="1980" max="2018" value="2000" class="slider" id="year">
  <p id = "sliderValue">2000</p>
- <button id="Button" onclick="findVideogames(document.getElementById('platformSelect').value, document.getElementById('publisherSelect').value, document.getElementById('year').value)">Find your video game!</button>
+ <button id="Button" onclick="findVideogames(document.getElementById('year').value, document.getElementById('platformSelect').value, document.getElementById('publisherSelect').value)">Find your video game!</button>
  <br><br><br>
  <div class="outputBox">
    <p id="output"></p>
