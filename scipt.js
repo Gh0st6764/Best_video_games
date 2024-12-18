@@ -69,9 +69,22 @@ for (var i = 0; i < uniquePublisher.length; i++){
     el.value = uniquePublisher[i];
 
     publisherSelect.appendChild(el);
+    }   
 
+//------------------------------------------------------------------------------
 
+if(platformSelect == "Multi-platform"){
 }
+    //if platform select = Mobile then 
+   //then print all applying videogames 
 
-
-    
+function findVideogames (chosenYear, chosenPlatform, chosenPublisher){
+    var outputList = [];
+    for(var i = 0; i < videoGames.length; i++){
+        if(platforms[i] == chosenPlatform && publisher[i] == chosenPublisher && releaseDate[i] == chosenYear){
+            outputList.push(videoGames[i]);
+        } 
+    console.log(outputList);
+    }   
+    return outputList; // Return the result continued use
+}
