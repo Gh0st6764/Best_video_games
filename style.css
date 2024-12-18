@@ -9,8 +9,8 @@ body{
 
 
 .outputBox{
-  min-height: 80px;
-  width: 60%;
+  min-height: 100px;
+  width: 45%;
   margin-bottom: 10px;
   background-color: white;
   padding: 5px;
@@ -23,8 +23,8 @@ body{
 
 button{
   background-color: white;
-  padding: 10px;
-  font-family: monospace;
+  padding: 15px;
+  font-family: "Poor Story", serif;
   border: none;
   
 }
@@ -32,20 +32,21 @@ button{
 header{
   background: rgb(255, 255, 255);
   padding: 20px;
-  margin-bottom: 10px;
-  font-size: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
   font-family: "Poor Story", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 select{
-  padding: 10px;
-  font-family: monospace;
+  padding: 14px;
+  font-family: "Poor Story", serif;
   cursor: pointer;
 }
 
 input{
   padding: 10px;
-  font-family: monospace;
+  background: rgb(255, 255, 255);
+  font-family: "Poor Story", serif;
 }
