@@ -6,7 +6,11 @@ body{
   font-style: normal;
 }
 
-
+.myDiv{
+  border: 1px outset black;
+  background-color: lightskyblue;
+  text-align: center;
+ }
 
 .outputBox{
   min-height: 100px;
@@ -47,6 +51,6 @@ select{
 
 input{
   padding: 10px;
-  background: rgb(255, 255, 255);
+  background: lightskyblue;
   font-family: "Poor Story", serif;
 }
