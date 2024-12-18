@@ -1,7 +1,12 @@
 body{
   font-family: monospace;
   background-color: rgb(220, 115, 238);
+  font-family: "Poor Story", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
 
 .outputBox{
   min-height: 80px;
@@ -9,7 +14,12 @@ body{
   margin-bottom: 10px;
   background-color: white;
   padding: 5px;
+  font-family: "Poor Story", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
 
 button{
   background-color: white;
@@ -24,6 +34,9 @@ header{
   padding: 20px;
   margin-bottom: 10px;
   font-size: 10px;
+  font-family: "Poor Story", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 select{
