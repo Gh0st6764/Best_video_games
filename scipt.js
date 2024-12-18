@@ -36,7 +36,7 @@ var uniquePlatforms = [];
 var platformSelect = document.getElementById("platformSelect");
 
 var index = 0;
-while ( index < uniquePlatforms.length){
+while (index < uniquePlatforms.length){
     var el = document.createElement("option");
     el.innerHTML = uniquePlatforms[index];
     el.value = uniquePlatforms [index];
