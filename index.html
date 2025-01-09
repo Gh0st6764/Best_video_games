@@ -1,59 +1,43 @@
 <!DOCTYPE html>
-<html>
+
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>replit</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&family=Poor+Story&display=swap" rel="stylesheet">
-  <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-   
-   </head>
-    </head>
-  </body>
-  <div class="myDiv">
-    <h2></h2>
-    <p>Having Trouble Finding a Video game?</p>
-    </div>
-    </html>
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
 
 <body>
-	<header>
-		<h1><center>What video game should you buy?<center></h1>
-		<p></p>
-	</header>
+    <header>
+        <h1 style="text-align:center;">What video game should you buy?</h1>
+    </header>
 
-	<center>
-		<label>What's the platform?</label>
-    <br>
-    <select id="platformSelect">
+    <center>
+        <label>What's the platform?</label><br>
+        <select id="platformSelect"></select><br><br>
 
-    </select>
-    <br> 
-    <!-- <br> is adding a line break -->
-    <br>
+        <label>Favorite Publisher?</label><br>
+        <select id="publisherSelect"></select><br>
 
-    <label>Favorite Publisher?</label>
-    <br>
-    <select id="publisherSelect"></select>
-    <br>
+        <label>How recent?</label><br>
+        <input oninput="showYear()" type="range" min="1980" max="2018" value="2000" class="slider" id="year">
+        <p id="sliderValue">2000</p>
 
-    <label>How recent?</label><br>
-  <input  oninput="showYear()" type="range" min="1980" max="2018" value="2000" class="slider" id="year">
- <p id = "sliderValue">2000</p>
- <button id="Button" onclick="findVideogames(document.getElementById('year').value, document.getElementById('platformSelect').value, document.getElementById('publisherSelect').value)">Find your video game!</button>
- <br><br><br>
- <div class="outputBox">
-   <p id="output"></p>
- </div>
+        <button id="Button" onclick="findVideogames(document.getElementById('year').value, document.getElementById('platformSelect').value, document.getElementById('publisherSelect').value)">Find your video game!</button>
+        <br><br><br>
 
-  </center>
-  <script src="utils.js"></script>
+        <div class="outputBox">
+            <p id="output"></p>
+        </div>
+    </center>
+
+    <script src="utils.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
